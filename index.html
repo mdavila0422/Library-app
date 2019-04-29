@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="Martin Davila">
+  <meta name="description" content="Simple Library app">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="Header">
+        <h1>Welcome to my Library</h1>
+        <h3>Click the buton below to add a book to the library!</h3>
+        <input id="addNew" class="button" type="button" value="NEW BOOK"/>
+    </div>
+
+    <div>
+        <form hidden id="bookForm">
+                <table>
+                    <tr>
+                        <td>Title:</td>
+                        <td><input type="text" name="Title" id="title"></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Author:</td>
+                        <td><input type="text" name="Author" id="author"></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Pages:</td>
+                        <td><input type="text" name="Number of Pages" id="pages"></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Read</td>
+                        <td>Not Read</td>
+                    </tr>
+        
+                    <tr>
+                        <td>
+                            <label id="readStatus">
+                                <input type="radio" name="readRespose" value="Have Read" chek>
+                                <input type="radio" name="readRespose" value="Not Read Yet">
+                            </label>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td><input id="submit" type="submit" name="submitBookInfo" /></td>
+                    </tr>
+                </table>
+            </form>
+    </div>
+
+    <div id="Library">
+
+    </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- 
+<label for="title">
+        Title: 
+        <input type="text">
+    </label>
+
+    <label for="author">
+            Author: 
+            
+    </label>
+
+    <label for="number of pages">
+            Number of Pages: 
+            <input type="text">
+    </label>
+
+    <label for="has been read">
+            Has been read: 
+            Read
+            
+            Not Read
+            <input type="radio" name="readRespose" value="Not Read Yet">
+    </label> -->
