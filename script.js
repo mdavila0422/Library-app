@@ -19,19 +19,20 @@ addNewButton.addEventListener('click', showForm);
 const submitButton = document.querySelector('#submit');
 submitButton.addEventListener('click', submit);
 
-function Book(title, author, numPages, readStatus) {
-    // Constructor
-    this.title = title;
-    this.author = author;
-    this.numPages = numPages;
-    this.readStatus = readStatus;
-}
-
-Book.prototype.toggleRead = function() {
-    if(this.readStatus == 'Have Read'){
-        this.readStatus = 'Not Read Yet';
-    } else {
-        this.readStatus = "Have Read";
+class Book {
+    constructor(title, author, numPages, readStatus) {
+        this.title = title;
+        this.author = author;
+        this.numPages = numPages;
+        this.readStatus = readStatus;
+    }
+    toggleRead() {
+        if (this.readStatus == 'Have Read') {
+            this.readStatus = 'Not Read Yet';
+        }
+        else {
+            this.readStatus = "Have Read";
+        }
     }
 }
 
